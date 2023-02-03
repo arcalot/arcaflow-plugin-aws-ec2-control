@@ -1,0 +1,9 @@
+# yaml-language-server:$schema=input_schema.json
+
+action: "reboot"
+wait: true
+instance_id: "FILL_IN"
+aws_access_key_id: "SECRET"
+aws_access_private_key: "SECRET"
+aws_region: "us-west-2"
+wait_timeout: 60  
