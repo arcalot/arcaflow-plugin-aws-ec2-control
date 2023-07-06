@@ -1,0 +1,7 @@
+action: START 
+instance_id: "none" 
+aws_access_key_id: "none" 
+aws_access_private_key: "none" 
+aws_region: "none" 
+wait: True 
+wait_timeout: 30 
