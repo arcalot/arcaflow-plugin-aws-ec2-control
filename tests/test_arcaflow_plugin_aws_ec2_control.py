@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 import unittest
-from arcaflow_plugin_aws_ec2_control import ec2_plugin
+import ec2_plugin
 from arcaflow_plugin_sdk import plugin
-
-from lib2to3.pytree import Node
-import unittest
-from unittest.mock import patch
 import boto3
 from moto import mock_ec2
 
@@ -44,7 +40,7 @@ class AwsEC2Test(unittest.TestCase):
     def test_functional(self):
 
         # Setup the instance in mock
-        client = boto3.client("ec2", region_name=mock_region)
+        # client = boto3.client("ec2", region_name=mock_region)
         ec2 = boto3.resource("ec2", region_name=mock_region)
         instance = ec2.create_instances(ImageId="ami-12c6146b", MinCount=1, MaxCount=1)[
             0

@@ -1,13 +1,17 @@
 [tool.poetry]
-name = "arcaflow-plugin-template-python"
+name = "arcaflow-plugin-aws-ec2-control"
 version = "0.1.0"
 description = ""
 authors = ["Arcalot"]
 license = "Apache-2.0+GPL-2.0-only"
 
+packages = [
+   { include="ec2_plugin.py", from="./arcaflow_plugin_aws_ec2_control"  },
+]
+
 [tool.poetry.dependencies]
 python = "^3.9"
-arcaflow-plugin-sdk = "0.10.0"
+arcaflow-plugin-sdk = "^0.10.3"
 boto3 = "1.26.*"
 moto = "4.1.*"
 
