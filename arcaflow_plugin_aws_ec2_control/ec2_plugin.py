@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from curses import meta
 import sys
 import enum
 import typing
@@ -165,7 +164,7 @@ def aws_action(
                 resource.wait_until_terminated()
         except botocore.exceptions.WaiterError as e:
             return "error", ErrorOutput(
-                "Failed due to timeout while waiting for final state."
+                f"Failed due to timeout while waiting for final state: {e}"
             )
 
     resource.reload()  # Ensure that the state is up to date
