@@ -67,17 +67,17 @@ uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
 name = "boto3"
-version = "1.26.165"
+version = "1.28.9"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "boto3-1.26.165-py3-none-any.whl", hash = "sha256:fa85b67147c8dc99b6e7c699fc086103f958f9677db934f70659e6e6a72a818c"},
-    {file = "boto3-1.26.165.tar.gz", hash = "sha256:9e7242b9059d937f34264125fecd844cb5e01acce6be093f6c44869fdf7c6e30"},
+    {file = "boto3-1.28.9-py3-none-any.whl", hash = "sha256:01f078047eb4d238c6b9c6cc623f2af33b4ae67980c5326691e35cb5493ff6c7"},
+    {file = "boto3-1.28.9.tar.gz", hash = "sha256:4cc0c6005be910e52077227e670930ab55a41ba86cdb6d1c052571d08cd4d32c"},
 ]
 
 [package.dependencies]
-botocore = ">=1.29.165,<1.30.0"
+botocore = ">=1.31.9,<1.32.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.6.0,<0.7.0"
 
@@ -86,13 +86,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.29.165"
+version = "1.31.9"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "botocore-1.29.165-py3-none-any.whl", hash = "sha256:6f35d59e230095aed7cd747604fe248fa384bebb7d09549077892f936a8ca3df"},
-    {file = "botocore-1.29.165.tar.gz", hash = "sha256:988b948be685006b43c4bbd8f5c0cb93e77c66deb70561994e0c5b31b5a67210"},
+    {file = "botocore-1.31.9-py3-none-any.whl", hash = "sha256:e56ccd3536a90094ea5b176b5dd33bfe4f049efdf71af468ea1661bd424c787d"},
+    {file = "botocore-1.31.9.tar.gz", hash = "sha256:bd849d3ac95f1781385ed831d753a04a3ec870a59d6598175aaedd71dc2baf5f"},
 ]
 
 [package.dependencies]
@@ -101,7 +101,7 @@ python-dateutil = ">=2.1,<3.0.0"
 urllib3 = ">=1.25.4,<1.27"
 
 [package.extras]
-crt = ["awscrt (==0.16.9)"]
+crt = ["awscrt (==0.16.26)"]
 
 [[package]]
 name = "cbor2"
@@ -391,13 +391,13 @@ test-randomorder = ["pytest-randomly"]
 
 [[package]]
 name = "docformatter"
-version = "1.7.3"
+version = "1.7.5"
 description = "Formats docstrings to follow PEP 257"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "docformatter-1.7.3-py3-none-any.whl", hash = "sha256:ba776f6305ff0ae9e1f42178975c0956ce01216e80b9d3e3e43daae9f742e321"},
-    {file = "docformatter-1.7.3.tar.gz", hash = "sha256:f6ce59631d4ecc41af2780787b88f5dab94cdf1383796b1110318040c2f4ea36"},
+    {file = "docformatter-1.7.5-py3-none-any.whl", hash = "sha256:a24f5545ed1f30af00d106f5d85dc2fce4959295687c24c8f39f5263afaf9186"},
+    {file = "docformatter-1.7.5.tar.gz", hash = "sha256:ffed3da0daffa2e77f80ccba4f0e50bfa2755e1c10e130102571c890a61b246e"},
 ]
 
 [package.dependencies]
@@ -507,13 +507,13 @@ files = [
 
 [[package]]
 name = "moto"
-version = "4.1.12"
+version = "4.1.13"
 description = ""
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "moto-4.1.12-py2.py3-none-any.whl", hash = "sha256:6f40141ff2f3a309c19faa169433afdf48d28733d328b08a843021ae36f005d9"},
-    {file = "moto-4.1.12.tar.gz", hash = "sha256:25577e4cf55f05235f4efe78bcfeb5a7704fb75c16b426a5de2fc1e6b7b8545b"},
+    {file = "moto-4.1.13-py2.py3-none-any.whl", hash = "sha256:9650d05d89b6f97043695548fbc0d8fb293f4177daaebbcee00bb0d171367f1a"},
+    {file = "moto-4.1.13.tar.gz", hash = "sha256:dd3e2ad920ab8b058c4f62fa7c195b788bd1f018cc701a1868ff5d5c4de6ed47"},
 ]
 
 [package.dependencies]
@@ -849,4 +849,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "2bcc316c411eae2a13730e95831a12574ee5ccd0ac58dc5171fa6382e60fe6df"
+content-hash = "58f9af3099047cffa05c07d560640f3b69cab0ba5ce4d9dd2b0098ee70909a00"
