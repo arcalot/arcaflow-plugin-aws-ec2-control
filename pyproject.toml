@@ -13,7 +13,7 @@ packages = [
 python = "^3.9"
 arcaflow-plugin-sdk = "^0.10.3"
 boto3 = "1.28.*"
-moto = "4.1.*"
+moto = "4.2.*"
 
 [tool.poetry.dev-dependencies]
 docformatter = "^1.5.0"
