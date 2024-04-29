@@ -40,46 +40,46 @@ Runs AWS EC2 actions
 <table><tbody>
 <tr><th>Type:</th><td><code>scope</code></td><tr><th>Root object:</th><td>NodeActionParams</td></tr>
 <tr><th>Properties</th><td><details><summary>action (<code>enum[string]</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>action</td></tr><tr><th>Description:</th><td>The action to execute.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>enum[string]</code></td><tr><td colspan="2">
+                <table><tbody><tr><th>Name:</th><td>action</td></tr><tr><th>Description:</th><td width="500">The action to execute.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>enum[string]</code></td><tr><td colspan="2">
         <details><summary>Values</summary>
             <ul><li><strong><code>force_stop</code>:</strong> FORCE_STOP</li><li><strong><code>reboot</code>:</strong> REBOOT</li><li><strong><code>start</code>:</strong> START</li><li><strong><code>stop</code>:</strong> STOP</li><li><strong><code>terminate</code>:</strong> TERMINATE</li></ul>
         </details>
     </td>
 </tr></tbody></table>
             </details><details><summary>aws_access_key_id (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>aws_access_public_key</td></tr><tr><th>Description:</th><td>The AWS public key/key id.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>aws_access_public_key</td></tr><tr><th>Description:</th><td width="500">The AWS public key/key id.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details><details><summary>aws_access_private_key (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>aws_access_private_key</td></tr><tr><th>Description:</th><td>The AWS private/access key.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>aws_access_private_key</td></tr><tr><th>Description:</th><td width="500">The AWS private/access key.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details><details><summary>aws_region (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>aws_region</td></tr><tr><th>Description:</th><td>The AWS region the instance is in.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>aws_region</td></tr><tr><th>Description:</th><td width="500">The AWS region the instance is in.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details><details><summary>instance_id (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>addr</td></tr><tr><th>Description:</th><td>The AWS instance ID.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>addr</td></tr><tr><th>Description:</th><td width="500">The AWS instance ID.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details><details><summary>wait (<code>bool</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>wait</td></tr><tr><th>Description:</th><td>Whether to wait for it to complete its action.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>bool</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>wait</td></tr><tr><th>Description:</th><td width="500">Whether to wait for it to complete its action.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>bool</code></td></tbody></table>
             </details><details><summary>wait_timeout (<code>int</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>wait_timeout</td></tr><tr><th>Description:</th><td>The amount of time in seconds to spend waiting for the desired state.</td></tr><tr><th>Required:</th><td>No</td></tr><tr><th>Default (JSON encoded):</th><td><pre><code>30</code></pre></td></tr><tr><th>Type:</th><td><code>int</code></td>
+                <table><tbody><tr><th>Name:</th><td>wait_timeout</td></tr><tr><th>Description:</th><td width="500">The amount of time in seconds to spend waiting for the desired state.</td></tr><tr><th>Required:</th><td>No</td></tr><tr><th>Default (JSON encoded):</th><td><pre><code>30</code></pre></td></tr><tr><th>Type:</th><td><code>int</code></td>
 </tbody></table>
             </details></td></tr>
 <tr><td colspan="2"><details><summary><strong>Objects</strong></summary><details><summary>NodeActionParams (<code>object</code>)</summary>
             <table><tbody><tr><th>Type:</th><td><code>object</code></td><tr><th>Properties</th><td><details><summary>action (<code>enum[string]</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>action</td></tr><tr><th>Description:</th><td>The action to execute.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>enum[string]</code></td><tr><td colspan="2">
+        <table><tbody><tr><th>Name:</th><td>action</td></tr><tr><th>Description:</th><td width="500">The action to execute.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>enum[string]</code></td><tr><td colspan="2">
         <details><summary>Values</summary>
             <ul><li><strong><code>force_stop</code>:</strong> FORCE_STOP</li><li><strong><code>reboot</code>:</strong> REBOOT</li><li><strong><code>start</code>:</strong> START</li><li><strong><code>stop</code>:</strong> STOP</li><li><strong><code>terminate</code>:</strong> TERMINATE</li></ul>
         </details>
     </td>
 </tr></tbody></table>
         </details><details><summary>aws_access_key_id (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>aws_access_public_key</td></tr><tr><th>Description:</th><td>The AWS public key/key id.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>aws_access_public_key</td></tr><tr><th>Description:</th><td width="500">The AWS public key/key id.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details><details><summary>aws_access_private_key (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>aws_access_private_key</td></tr><tr><th>Description:</th><td>The AWS private/access key.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>aws_access_private_key</td></tr><tr><th>Description:</th><td width="500">The AWS private/access key.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details><details><summary>aws_region (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>aws_region</td></tr><tr><th>Description:</th><td>The AWS region the instance is in.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>aws_region</td></tr><tr><th>Description:</th><td width="500">The AWS region the instance is in.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details><details><summary>instance_id (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>addr</td></tr><tr><th>Description:</th><td>The AWS instance ID.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>addr</td></tr><tr><th>Description:</th><td width="500">The AWS instance ID.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details><details><summary>wait (<code>bool</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>wait</td></tr><tr><th>Description:</th><td>Whether to wait for it to complete its action.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>bool</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>wait</td></tr><tr><th>Description:</th><td width="500">Whether to wait for it to complete its action.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>bool</code></td></tbody></table>
         </details><details><summary>wait_timeout (<code>int</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>wait_timeout</td></tr><tr><th>Description:</th><td>The amount of time in seconds to spend waiting for the desired state.</td></tr><tr><th>Required:</th><td>No</td></tr><tr><th>Default (JSON encoded):</th><td><pre><code>30</code></pre></td></tr><tr><th>Type:</th><td><code>int</code></td>
+        <table><tbody><tr><th>Name:</th><td>wait_timeout</td></tr><tr><th>Description:</th><td width="500">The amount of time in seconds to spend waiting for the desired state.</td></tr><tr><th>Required:</th><td>No</td></tr><tr><th>Default (JSON encoded):</th><td><pre><code>30</code></pre></td></tr><tr><th>Type:</th><td><code>int</code></td>
 </tbody></table>
         </details></td></tr>
 </tbody></table>
@@ -94,11 +94,11 @@ Runs AWS EC2 actions
 <table><tbody>
 <tr><th>Type:</th><td><code>scope</code></td><tr><th>Root object:</th><td>ErrorOutput</td></tr>
 <tr><th>Properties</th><td><details><summary>error (<code>string</code>)</summary>
-                <table><tbody><tr><th>Name:</th><td>Error</td></tr><tr><th>Description:</th><td>An explanation why the execution failed.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+                <table><tbody><tr><th>Name:</th><td>Error</td></tr><tr><th>Description:</th><td width="500">An explanation why the execution failed.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
             </details></td></tr>
 <tr><td colspan="2"><details><summary><strong>Objects</strong></summary><details><summary>ErrorOutput (<code>object</code>)</summary>
             <table><tbody><tr><th>Type:</th><td><code>object</code></td><tr><th>Properties</th><td><details><summary>error (<code>string</code>)</summary>
-        <table><tbody><tr><th>Name:</th><td>Error</td></tr><tr><th>Description:</th><td>An explanation why the execution failed.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
+        <table><tbody><tr><th>Name:</th><td>Error</td></tr><tr><th>Description:</th><td width="500">An explanation why the execution failed.</td></tr><tr><th>Required:</th><td>Yes</td></tr><tr><th>Type:</th><td><code>string</code></td></tbody></table>
         </details></td></tr>
 </tbody></table>
         </details></details></td></tr>
