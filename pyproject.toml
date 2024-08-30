@@ -11,8 +11,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-arcaflow-plugin-sdk = "^0.13.0"
-boto3 = "1.34.*"
+arcaflow-plugin-sdk = "^0.14.1"
+boto3 = "1.35.*"
 moto = "5.0.*"
 
 [tool.poetry.dev-dependencies]
