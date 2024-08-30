@@ -57,7 +57,7 @@ class AwsEC2Test(unittest.TestCase):
         )
 
         # Test start
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_1", input)
 
         # Verify that it completed successfully
         self.assertEqual("success", output_id)
@@ -68,7 +68,7 @@ class AwsEC2Test(unittest.TestCase):
 
         # Test stop
         input.action = ec2_plugin.NodeAction.STOP
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_2", input)
 
         self.assertEqual("success", output_id)
         self.assertEqual(False, output_data.final_power_state_on)
@@ -78,7 +78,7 @@ class AwsEC2Test(unittest.TestCase):
 
         # Start again
         input.action = ec2_plugin.NodeAction.START
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_3", input)
 
         self.assertEqual("success", output_id)
         self.assertEqual(True, output_data.final_power_state_on)
@@ -88,7 +88,7 @@ class AwsEC2Test(unittest.TestCase):
 
         # Test force stop
         input.action = ec2_plugin.NodeAction.FORCE_STOP
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_4", input)
 
         self.assertEqual("success", output_id)
         self.assertEqual(False, output_data.final_power_state_on)
@@ -98,13 +98,13 @@ class AwsEC2Test(unittest.TestCase):
 
         # Test reboot when node is off
         input.action = ec2_plugin.NodeAction.REBOOT
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_5", input)
 
         self.assertEqual("error", output_id)
 
         # Start again
         input.action = ec2_plugin.NodeAction.START
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_6", input)
 
         self.assertEqual("success", output_id)
         self.assertEqual(True, output_data.final_power_state_on)
@@ -114,7 +114,7 @@ class AwsEC2Test(unittest.TestCase):
 
         # Test reboot when node is on
         input.action = ec2_plugin.NodeAction.REBOOT
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_7", input)
 
         self.assertEqual("success", output_id)
         self.assertEqual(True, output_data.final_power_state_on)
@@ -124,7 +124,7 @@ class AwsEC2Test(unittest.TestCase):
 
         # Test terminate
         input.action = ec2_plugin.NodeAction.TERMINATE
-        output_id, output_data = ec2_plugin.aws_action(input)
+        output_id, output_data = ec2_plugin.aws_action(self.id() + "_8", input)
 
         self.assertEqual("success", output_id)
         self.assertEqual(False, output_data.final_power_state_on)
