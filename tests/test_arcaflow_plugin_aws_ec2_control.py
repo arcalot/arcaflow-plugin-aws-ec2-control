@@ -3,7 +3,7 @@ import unittest
 import ec2_plugin
 from arcaflow_plugin_sdk import plugin
 import boto3
-from moto import mock_ec2
+from moto import mock_aws
 
 mock_region = "us-east-2"
 
@@ -36,7 +36,7 @@ class AwsEC2Test(unittest.TestCase):
     # @patch("boto3.session.session.resource.Instance")
     # @patch("ec2_plugin.boto3.client")
     # @patch("ec2_plugin.boto3")
-    @mock_ec2
+    @mock_aws
     def test_functional(self):
 
         # Setup the instance in mock
