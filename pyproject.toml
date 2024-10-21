@@ -13,7 +13,7 @@ packages = [
 python = "^3.9"
 arcaflow-plugin-sdk = "^0.14.1"
 boto3 = "1.35.*"
-moto = "4.2.*"
+moto = "5.0.*"
 # workaround for: https://github.com/python-poetry/poetry-plugin-export/issues/183
 urllib3 = ">=1.25.4,<1.27"
 
