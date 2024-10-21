@@ -1,7 +1,7 @@
 ---
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.6.0
+  rev: v5.0.0
   hooks:
   - id: trailing-whitespace
   - id: end-of-file-fixer
@@ -9,14 +9,14 @@ repos:
   - id: check-added-large-files
   - id: check-toml
 - repo: https://github.com/python/black
-  rev: 24.4.2
+  rev: 24.10.0
   hooks:
   - id: black
     name: black (python3)
     language_version: python3
     args: ["--check"]
 - repo: https://github.com/PyCQA/flake8
-  rev: 7.0.0
+  rev: 7.1.1
   hooks:
   - id: flake8
 - repo: https://github.com/pycqa/isort
@@ -36,6 +36,6 @@ repos:
   hooks:
   - id: shellcheck
 - repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: v0.40.0
+  rev: v0.42.0
   hooks:
   - id: markdownlint
