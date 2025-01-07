@@ -1,5 +1,9 @@
 # Python Plugin AWS EC2 Plugin
 
+> [!WARNING]
+Plugin is not supported. Arcaflow does not have a graceful way of handling secret credentials at the time of this update.
+If a use case for this plugin arises, please post about it in [Arcalot's discussion tab](https://github.com/orgs/arcalot/discussions) for us to consider un-archiving the plugin.
+
 **BE CAREFUL WITH AWS CREDENTIALS**
 
 This is a simple plugin that allows you to input your EC2 instance ID, the power action you want to do, and your AWS creds, to control the EC2 instance.
